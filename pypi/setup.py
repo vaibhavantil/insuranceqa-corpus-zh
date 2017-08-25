@@ -51,7 +51,7 @@ Michael R. Glass, Lidan Wang, Bowen Zhou @ 2015
 """
 
 setup(name='insuranceqa_data',
-      version='2.1',
+      version='2.2',
       description='Insuranceqa Corpus in Chinese for Machine Learning',
       long_description=LONGDOC,
       author='Hai Liang Wang',

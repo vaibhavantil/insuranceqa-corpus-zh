@@ -38,14 +38,14 @@ def load(data_path):
         wget.download("https://github.com/Samurais/insuranceqa-corpus-zh/raw/release/corpus/pairs/iqa.vocab.json.gz", out = os.path.join(curdir, 'pairs'))
 
         # download all pool data
-        print("\n [insuranceqa_data] downloading data %s ... \n" % "https://github.com/Samurais/insuranceqa-corpus-zh/blob/release/corpus/pool/answers.json.gz")
-        wget.download("https://github.com/Samurais/insuranceqa-corpus-zh/blob/release/corpus/pool/answers.json.gz", out = os.path.join(curdir, 'pool'))
-        print("\n [insuranceqa_data] downloading data %s ... \n" % "https://github.com/Samurais/insuranceqa-corpus-zh/blob/release/corpus/pool/test.json.gz")
-        wget.download("https://github.com/Samurais/insuranceqa-corpus-zh/blob/release/corpus/pool/test.json.gz", out = os.path.join(curdir, 'pairs'))
-        print("\n [insuranceqa_data] downloading data %s ... \n" % "https://github.com/Samurais/insuranceqa-corpus-zh/blob/release/corpus/pool/train.json.gz")
-        wget.download("https://github.com/Samurais/insuranceqa-corpus-zh/blob/release/corpus/pool/train.json.gz", out = os.path.join(curdir, 'pairs'))
-        print("\n [insuranceqa_data] downloading data %s ... \n" % "https://github.com/Samurais/insuranceqa-corpus-zh/blob/release/corpus/pool/valid.json.gz")
-        wget.download("https://github.com/Samurais/insuranceqa-corpus-zh/blob/release/corpus/pool/valid.json.gz", out = os.path.join(curdir, 'pairs'))
+        print("\n [insuranceqa_data] downloading data %s ... \n" % "https://github.com/Samurais/insuranceqa-corpus-zh/raw/release/corpus/pool/answers.json.gz")
+        wget.download("https://github.com/Samurais/insuranceqa-corpus-zh/raw/release/corpus/pool/answers.json.gz", out = os.path.join(curdir, 'pool'))
+        print("\n [insuranceqa_data] downloading data %s ... \n" % "https://github.com/Samurais/insuranceqa-corpus-zh/raw/release/corpus/pool/test.json.gz")
+        wget.download("https://github.com/Samurais/insuranceqa-corpus-zh/raw/release/corpus/pool/test.json.gz", out = os.path.join(curdir, 'pairs'))
+        print("\n [insuranceqa_data] downloading data %s ... \n" % "https://github.com/Samurais/insuranceqa-corpus-zh/raw/release/corpus/pool/train.json.gz")
+        wget.download("https://github.com/Samurais/insuranceqa-corpus-zh/raw/release/corpus/pool/train.json.gz", out = os.path.join(curdir, 'pairs'))
+        print("\n [insuranceqa_data] downloading data %s ... \n" % "https://github.com/Samurais/insuranceqa-corpus-zh/raw/release/corpus/pool/valid.json.gz")
+        wget.download("https://github.com/Samurais/insuranceqa-corpus-zh/raw/release/corpus/pool/valid.json.gz", out = os.path.join(curdir, 'pairs'))
         
     with gzip.open(data_path, 'rb') as f:
         data = json.loads(f.read())
